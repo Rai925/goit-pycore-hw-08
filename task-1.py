@@ -137,7 +137,7 @@ class AddressBook(UserDict):
 
     def find(self, name: str) -> Record:
         if name in self.data:
-            return self.data[name]
+            return self.data.get(name)
         else:
             return None
         
